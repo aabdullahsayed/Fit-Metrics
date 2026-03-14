@@ -1,0 +1,28 @@
+﻿@model IEnumerable<FitnessTracker.Models.User>
+
+<div class="container">
+    
+    <h2>Weight Tracker</h2>
+    <p>
+        <a asp-action="Create">Add Entry</a>
+    </p>
+    
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Weight</th>
+        </tr>
+    </table>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.name</td>
+            <td>@item.age</td>
+            <td>@item.IdealWeight</td>  
+        </tr>
+       
+    }
+    
+    
+</div>

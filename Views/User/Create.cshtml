@@ -1,0 +1,69 @@
+﻿@model FitnessTracker.Models.User
+
+<form asp-action="Create">
+    
+    <div>
+        <label asp-for="name">Name</label>
+        <input asp-for="name" placeholder="Enter Name" />
+    </div>
+    <div>
+        <label asp-for="age">Name</label>
+        <input asp-for="age" placeholder="Enter Name" />
+    </div>
+    <div>
+        <label asp-for="BMR">Name</label>
+        <input asp-for="BMR" placeholder="Enter Name" />
+    </div>
+    
+    <div>
+        <label asp-for="DietType">Name</label>
+        <input asp-for="DietType" placeholder="Enter Name" />
+    </div>
+    
+    <div>
+        <label asp-for="gender">Name</label>
+        <input asp-for="gender" placeholder="Enter Name" />
+    </div>
+    
+    <div>
+        <label asp-for="height">Name</label>
+        <input asp-for="height" placeholder="Enter Name" />
+    </div>
+    
+    <div>
+        <label asp-for="ProgramStart">Add start date</label>
+        <input asp-for="ProgramEnd" type="date" placeholder="Enter Start date" />
+    </div>
+    
+    <div>
+        <label asp-for="ProgramEnd">Add end date</label>
+        <input asp-for="ProgramEnd" type="date" placeholder="Enter end date" />
+    </div>
+    
+    <div>
+        <label asp-for="pType">Add end date</label>
+        <input asp-for="pType" placeholder="Enter end date" />
+    </div>
+    
+    <div>
+        <label asp-for="IdealWeight">Add end date</label>
+        <input asp-for="IdealWeight" placeholder="Enter end date" />
+    </div>
+    
+    <div>
+        <label asp-for="MedicalIssue">Add end date</label>
+        <input asp-for="MedicalIssue" placeholder="MI" />
+    </div>
+    
+    <div>
+        <label asp-for="TDEE">Add end date</label>
+        <input asp-for="TDEE" placeholder="Enter end date" />
+    </div>
+    
+    
+    <div>
+        <button type="submit">Save</button>
+    </div>
+    
+    
+</form>
