@@ -1,4 +1,4 @@
-﻿namespace Fitness_Tracker.Models;
+﻿namespace FitnessTracker.Models;
 
 public class user
 {
