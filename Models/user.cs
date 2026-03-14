@@ -11,6 +11,9 @@ public class user
     public DateOnly ProgramEnd { get; set; }
     public string DietType { get; set; }
     public int BMR { get; set; }
+    public int TDEE { get; set; }
     public int TotalCals { get; set; }
+    public int IdealWeight { get; set; }
+    public ProgramType pType { get; set;}
     
 }
