@@ -1,7 +1,14 @@
+using FitnessTracker.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+var conntectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite(conntectionString));
+
 
 var app = builder.Build();
 
@@ -22,7 +29,7 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    pattern: "{controller=User}/{action=Index}/{id?}")
     .WithStaticAssets();
 
 
