@@ -1,0 +1,30 @@
+﻿@model IEnumerable<FitnessTracker.Models.Report>
+<h1>Daily Report</h1>
+<a asp-action="Create">Create Report</a>
+
+<table class="table table-striped table-hover table-bordered">
+    <tr>
+        <th>Weight</th>
+        <th>Waist</th>
+        <th>Wrist</th>
+        <th>Hip</th>
+        <th>Chest</th>
+        <th>Forearm</th>
+        <th>StressIssue</th>
+        <th>date</th>
+    </tr>
+    
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Weight</td>
+            <td>@item.Waist</td>
+            <td>@item.Wrist</td>
+            <td>@item.Hip</td>
+            <td>@item.Chest</td>
+            <td>@item.Forearm</td>
+            <td>@item.StressIssue</td>
+            <td>@item.date</td>
+        </tr>
+    }
+</table>
