@@ -1,0 +1,53 @@
+﻿@model FitnessTracker.Models.Report;
+
+<h2>Add Daily Report</h2>
+<a asp-action="Index">See Report</a>
+
+
+<form asp-action="Create">
+    
+    <div>
+        <input asp-for="ID" placeholder="Enter ID"/>
+    </div>
+
+
+    <div>
+        <input asp-for="Weight" placeholder="Enter Weight"/>
+    </div>
+
+    <div>
+        <input asp-for="Chest" placeholder="Enter Chest Size"/>
+    </div>
+
+    <div>
+
+        <input asp-for="date" type="date" placeholder="Enter Date"/>
+    </div>
+
+    <div>
+        <input asp-for="Waist" placeholder="Enter Waist size"/>
+    </div>
+
+
+    <div>
+        <input asp-for="Wrist" placeholder="Enter Wrist Size"/>
+    </div>
+
+    <div>
+        <input asp-for="Forearm" placeholder="Enter Forearm Size"/>
+    </div>
+
+    <div>
+        <input asp-for="Hip" placeholder="Enter Hip Size"/>
+    </div>
+
+    <div>
+        <input asp-for="StressIssue" placeholder="Enter Stress Issue"/>
+    </div>
+    
+
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+
+</form>
